@@ -7,6 +7,17 @@ Not all PowerShell Modules are published to the PowerShellGallery but are hosted
 
 ##  Changes 
 
+## 1.8.0
+- Add: Create folder first before expanding archive
+- Add: Test-Path to see if tmpDir already exist
+
+## 1.7.0
+https://github.com/dfinke/InstallModuleFromGitHub/pull/32
+- Add tab-completion for -Scope by @cspotcode
+
+https://github.com/dfinke/InstallModuleFromGitHub/pull/25
+- fix unzippedArchive path when searching for psd1 file by @joshschmitter
+
 ## 1.6.0
 
 via https://github.com/dfinke/InstallModuleFromGitHub/pull/25
