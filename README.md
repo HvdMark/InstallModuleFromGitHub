@@ -7,6 +7,21 @@ Not all PowerShell Modules are published to the PowerShellGallery but are hosted
 
 ##  Changes 
 
+## 1.8.1
+- Add: Default $Scope to CurrentUser if $Scope is'nt entered
+- Add: More verbose output
+- Fix: PSModulePath is different between Windows Powershell 5.1 and Powershell 7.0
+  $HOME can't be used when documents folder is moved with folder redirection
+
+  Current User:
+  5.1 [Environment]::GetFolderPath('MyDocuments')\WindowsPowerShell\Modules
+  7.0 [Environment]::GetFolderPath('MyDocuments')\PowerShell\Modules
+
+  All User:
+  5.1 $env:ProgramFiles\WindowsPowerShell\Modules
+  7.0 $env:ProgramFiles\PowerShell\Modules
+  
+
 ## 1.8.0
 - Add: Create folder first before expanding archive
 - Add: Test-Path to see if tmpDir already exist
